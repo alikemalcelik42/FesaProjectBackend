@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <Reference Include="Core">
-      <HintPath>..\..\MyFinalProject\Core\bin\Debug\netcoreapp3.1\Core.dll</HintPath>
+      <HintPath>..\..\MyFinalProject\Core\bin\Debug\net6.0\Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 

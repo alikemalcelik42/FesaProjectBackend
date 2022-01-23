@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MicroKnights.Log4NetAdoNetAppender" Version="1.0.2" />
+    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="MicroKnights.Log4NetAdoNetAppender" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
@@ -17,14 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Core">
-      <HintPath>..\..\MyFinalProject\Core\bin\Debug\netcoreapp3.1\Core.dll</HintPath>
-    </Reference>
+    <Folder Include="wwwroot\WriteImages\" />
+    <Folder Include="wwwroot\UserProfilePhotos\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\WriteImages\" />
-    <Folder Include="wwwroot\UserProfilePhotos\" />
+    <Reference Include="Core">
+      <HintPath>..\..\MyFinalProject\Core\bin\Debug\net6.0\Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -58,7 +58,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.WriteDeleted);
         }
 
-        [LogAspect(typeof(FileLogger))]
+        [CacheAspect]
         public IDataResult<List<Write>> GetAll()
         {
             return new SuccessDataResult<List<Write>>(_writeDal.GetAll(), Messages.WritesListed);
